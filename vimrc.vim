@@ -17,6 +17,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'dense-analysis/ale'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
 Plug 'posva/vim-vue'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
@@ -211,6 +212,21 @@ autocmd FileType html,css,vue EmmetInstall
 
 " Set folding key
 nnoremap <space> za
+
+
+""""""""""""""""""""""""""""""""""""""""
+" Lightline Config
+""""""""""""""""""""""""""""""""""""""""
+
+let g:lightline = {
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'gitbranch#name'
+    \ },
+    \ }
 
 
 """"""""""""""""""""""""""""""""""""""""
