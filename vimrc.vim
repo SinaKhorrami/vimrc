@@ -44,6 +44,10 @@ set whichwrap+=<,>,h,l
 " Highlight search
 set hlsearch
 
+" Split window direction
+set splitbelow
+set splitright
+
 " Ignore case when searching
 set ignorecase
 
