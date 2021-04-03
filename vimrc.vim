@@ -239,7 +239,7 @@ let g:lightline = {
 
 " js, css , HTML
 au BufNewFile,BufRead *.js,*.json,*.html,*.css,*.styl,*.scss,*.ts,*.cshtml,*.vue
-    \ setlocal noexpandtab |
+    \ setlocal expandtab |
     \ setlocal tabstop=2 |
     \ setlocal softtabstop=2 |
     \ setlocal shiftwidth=2 |
