@@ -9,6 +9,7 @@
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'aonemd/kuroi.vim'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
